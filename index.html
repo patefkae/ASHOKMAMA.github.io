@@ -37,7 +37,7 @@
         }
 
         .countdown-container img {
-            width: 340px; /* Make the image fill the width of the container */
+            width: 350px; /* Make the image fill the width of the container */
             height: 550px; /* Maintain the aspect ratio */
             border-radius: 5px; /* Optional: Add border-radius to the image */
             
@@ -77,8 +77,8 @@
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Display the countdown
-            document.getElementById("countdown").innerHTML = days + "d :" + hours + "h :" + minutes + "m :" + seconds + "s ";
-
+            document.getElementById("countdown").innerHTML = days + "d :" + hours + "h :" + minutes + "m :" + seconds + "s " ;
+            
             // If the countdown is over, display a message
             if (distance < 0) {
                 clearInterval(x);
